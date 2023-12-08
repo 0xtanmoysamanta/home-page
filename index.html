@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #future {
+      text-align: center;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+    .slider-container {
+      overflow: hidden;
+      margin-top: 20px;
+      width: 100%;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      cursor: pointer;
+      user-select: none;
+      background: none;
+      border: none;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+  </style>
+  <title>Image Slider</title>
+</head>
+<body>
+
+  <section id="future">
+    <h2>Future Features</h2>
+    <div class="slider-container">
+      <button class="prev" onclick="slide(-1)">❮</button>
+      <div class="slider">
+        <div class="slide">
+          <a href="https://themysteriousdark.blogspot.com/2023/12/paragraphrooted-wisdom-exploring.html?m=1">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsI8yal65fGkP5ZSeCOMRX8jAmFrnoynvQ5Nk7q6_pTJCB175-uWK2tSbzau-5S0pwUaxh4TlbWNd0F-1o2btJc8ZwKkL9Q6DVIOXfMzKrPNCgNtVFcLYmlQKK_bH3Y1XGjofKqGsM3ptJN4V0NAAWdvVEjy1InC1Anl7i7s1rCYCuq1-ilIghDd-GpGQ/s318/image.png" alt="Future Feature 1">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="https://themysteriousdark.blogspot.com/2023/12/storywhispers-of-wisdom-enchanted.html?m=1">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhP1y5A2B1WLPRchOBBOBKwDUarIdgC8YsMP4Ych8s-Cz33ZIgl-iOKmI3IwQSojAlDHaqz-qt_-wJSZjEgf2rbNePt37LOoDdYAhIkFYnV76tve2JjCGJH4031XS-7OMeKpDseeJNf6lB3VksAT5Ic-elktv_m_NwMJcOFsQnIMS9_khE8xLg-0rLrblk" alt="Future Feature 2">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="https://themysteriousdark.blogspot.com/2023/12/letter-friendly-reminder-to-smoking.html?m=1 ">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgM_xbL9vXvRBjt5SqDqalEsRqPDUranISo2AnaIc7I8UFXK2S1FmFtSA4lEc9WzTPgA0HYFo8pS69kHO3DHkZMxjrZCdmyWldIejRLn2f9H07Ddplt2eWoKhR143sYSLuYp_fJ0lyWrUquIJirn4oENHur4_LWesKQzNIV3kkTLebJ0r8AO6wUaVJBrR0/s225/image.png" alt="Future Feature 3"
+          </a>
+        </div>
+        <div class="slide">
+          <a href="https://themysteriousdark.blogspot.com/2023/12/paragraph-winter-in-india.html?m=1">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZnL4MSIziWFq_hxZMHVoLHtSjqikmMdsJQ6ooh9ca4aBaImCoRMkfTTwoPbHbAvsxlyKOZ1cPMQhAROhVirqWTcbqfVgNCriAKgix8zpmhmIkXqiYx_9fQsSrk3dODAPROwTRXRCsDsVi1rFsYe8Pyt0UsJ7EW8Wkpa7j1BkbSUfViPKCdgVfGHLQYXc/s225/image.png" alt="Future Feature 4">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="https://themysteriousdark.blogspot.com/2023/12/conservation-of-water.html?m=1 ">
+            <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj-UPABqch-Z9WNX_qYeRZ7UvBn9qiF42S5jgfMV15SFbLhjmIaTm4CXjLz1hNR_emP1oDx-MYdXEELvQl246L1xNozGgmoIN7eM4ofvCI1-v3erHTxm86bS_tf8BFAe4mnri1PC6ZAJWlWHb-SO63kbVN32sySAtrTIf76GDSnzJnrJpJ23aPyew0qGKs" alt="Future Feature 5">
+          </a>
+        </div>
+        <div class="slide">
+          <a href="https://themysteriousdark.blogspot.com/2023/12/unlocking-potential-of-language-models.html?m=1 ">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7xsyDahhSBhPcK5rmlfhuUeLvGmNM9Hgh9Oa9CUnk3TZmTSaR3YzFLlTOdDgu2xMdNSuw8Jj8vsaYhwKy-oDGRXg0OaFcKe-scJnngorKoSNOmOmdbJDNDQbgGjil3zitWb2dRz4b35P6N5h1m8OMBw9G7SUaS4AOajojbRQcNuzZWI9-Xzcr1Ji2BGA/s225/image.png" alt="Future Feature 6">
+          </a>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+      <button class="next" onclick="slide(1)">❯</button>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const slider = document.querySelector('.slider');
+      const slideWidth = document.querySelector('.slide').offsetWidth;
+      let currentSlide = 0;
+
+      function slideNext() {
+        currentSlide = (currentSlide + 1) % document.querySelectorAll('.slide').length;
+        updateSlider();
+      }
+
+      function updateSlider() {
+        const newPosition = -currentSlide * slideWidth;
+        slider.style.transform = `translateX(${newPosition}px)`;
+      }
+
+      setInterval(slideNext, 3000); // Change slide every 3 seconds (adjust as needed)
+
+      // Manual sliding functions
+      window.slide = function(direction) {
+        currentSlide = (currentSlide + direction + document.querySelectorAll('.slide').length) % document.querySelectorAll('.slide').length;
+        updateSlider();
+      };
+    });
+  </script>
+
+</body>
+</html>
